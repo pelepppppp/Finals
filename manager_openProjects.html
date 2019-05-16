@@ -206,10 +206,10 @@
          transition: all 0.3s ease;
          }
          #nav ul.main li a span {
-         color: #b7ac7f;
+         color: #ec2652;
          }
          #nav ul.main li a:hover {
-         color: #b7ac7f;
+         color: #ec2652;
          }
          #nav ul.sub {
          list-style-type: none;
@@ -321,7 +321,7 @@
          <ul class="main">
             <p style="font-size: 2em; color: #fff;">Manager</p>
             <li><a href="manager_takenProjects.html">Taken Projects</a></li>
-            <li><a href="manager_openProjects.html" style="color: #b7ac7f;">Open Projects</a></li>
+            <li><a href="manager_openProjects.html" style="color: #ec2652;">Open Projects</a></li>
             <li><a href="#">Clients</a></li>
             <li><a href="#">Approval</a></li>
             <li><a href="#">Logout</a></li>
@@ -334,152 +334,37 @@
            $('#nav').toggleClass('show');
          });
       </script>
-      <div class="container" style="margin-top: 5%; width: 100%;">
+      <div class="container" style="margin-top: 5%; width: 50%;">
           <h3 class="font-weight-normal">Open Projects</h3>
           <div class="row" style="margin-top: 2%;">
-            <table class="table table-condensed table-borderless">
-               <thead class="container fixedHeader thead-light" style="width: 120%;">
-                  <th style="width: 10%; padding-right: 7%;">#</th>
-                  <th style="width: 20%; padding-right: 3%;">Project</th>
-                  <th style="width: 30%; padding-right: 9%;">Status</th>
-                  <th style="width: 30%; padding-right: 17%;">Date Added</th>
-                  <th style="width: 10%;"></th>
-                  <th style="width: 10%;"></th>
+            <table class="table table-condensed table-borderless table-hover">
+               <thead class="thead-dark">
+                  <th style="width: 5%">#</th>
+                  <th style="width: 20%">Project</th>
+                  <th style="width: 10%">Date Added</th>
+                  <th style="width: 10%; padding-left: 10%;">Add Tasks</th>
                </thead>
-               <tbody class="container scrollContent" align="center" style="margin-top: 2%;">
+               <tbody>
                   <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">1</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Card Catalog System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
+                     <td>1</td>
+                     <td>Inventory System</td>
+                     <td>01/25/2019</td>
+                     <td><button class="btn btn-sm btn-info" style="width: 40%; margin-left: 46%;">Add</button></td>
                   </tr>
                   <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">2</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Calculator</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
+                     <td>2</td>
+                     <td>Library System</td>
+                     <td>05/25/2019</td>
+                     <td><button class="btn btn-sm btn-info" style="width: 40%; margin-left: 46%;">Add</button></td>
                   </tr>
                   <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">3</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Enrollment System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">1</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Card Catalog System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">2</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Calculator</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">3</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Enrollment System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">1</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Card Catalog System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">2</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Calculator</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">3</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Enrollment System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">1</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Card Catalog System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">2</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Calculator</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
-                  </tr>
-                  <tr>
-                     <td style="width: 10%; padding-left: 1.5%;">3</td>
-                     <td style="width: 30%; padding-left: 3.5%;">Enrollment System</td>
-                     <td style="width: 30%; padding-left: 2.8%;">Open</td>
-                     <td style="width: 30%; padding-right: 15%;">05/11/2019</td>
-                     <td><button id="btn1" class="btn btn-info btn-sm" style="width: 100%; margin-left: -80%;">Add Client</button></td>
-                     <td><button class="btn btn-danger btn-sm" style="width: 150%; margin-left: -110%;">Delete</button></td>
+                     <td>3</td>
+                     <td>CLS Registration System</td>
+                     <td>04/05/2019</td>
+                     <td><button class="btn btn-sm btn-info" style="width: 40%; margin-left: 46%;">Add</button></td>
                   </tr>
                </tbody>
             </table>
-            <script>
-                $(document).ready(function(){
-                    $("#table2").hide();
-                    $("#btn1").click(function(){
-                        $("#table2").show();
-                    });
-                });
-            </script>
-            <div class="container">
-                <table class="table table-condensed table-borderless" style="margin-top: 5%; border: 1px solid #ccc;" id="table2">
-                   <thead class="thead-light">
-                      <th style="width: 20%;">#</th>
-                      <th style="width: 40%;">Project</th>
-                      <th style="width: 40%;">Client</th>
-                      <th></th>
-                      <th></th>
-                   </thead>
-                   <tbody>
-                      <tr>
-                         <td>1</td>
-                         <td>Card Catalog System</td>
-                         <td>
-                            <select class="custom-select custom-select-sm mb-2" style="width: 80%;">
-                                <option selected>Select client...</option>
-                                <option value="1">Manny Pacquiao</option>
-                                <option value="2">Cynthia Villar</option>
-                                <option value="3">Liela Delima</option>
-                            </select>
-                         </td>
-                         <td><button class="btn btn-info btn-sm" style="width: 110%; margin-left: -35%;">Continue</button></td>
-                         <td><button class="btn btn-warning btn-sm" style="width: 150%; margin-left: -55%;">Cancel</button></td>
-                      </tr>
-                   </tbody>
-                </table>
-            </div>
          </div>
       </div>
    </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Manager | Clients</title>
+      <title>Manager | Approvals</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -311,13 +311,13 @@
             <!-- <li><a href="manager_openProjects.html">Open Projects</a></li> -->
             <!-- <li><a href="#">Clients</a></li> -->
             <li class="has-subnav">
-               <a class="nav-text" style="color: #ec2652;">Clients</a>
+               <a class="nav-text">Clients</a>
                <ul>
                   <li><a href="manager_assignedClients.html" class="sub">Assigned Clients</a></li>
                   <li><a href="manager_unassignedClients.html" class="sub">Unassigned Clients</a></li>
                </ul>
             </li>
-            <li><a href="#">Approval</a></li>
+            <li><a href="#" style="color: #ec2652;">Approval</a></li>
             <li><a href="#">Logout</a></li>
          </ul>
       </nav>
@@ -328,116 +328,83 @@
            $('#nav').toggleClass('show');
          });
       </script>
-      <div class="container" style="margin-top: 5%; width: 100%;">
-         <h3 style="margin-top: 5%; margin-bottom: 2%;" class="font-weight-normal">Assigned Clients</h3>
+      <div class="container" style="margin-top: 5%; width: 60%;">
+         <h3 style="margin-top: 5%; margin-bottom: 2%;" class="font-weight-normal">Needs Approval</h3>
          <div class="row">
             <table class="table table-borderless table-hover">
                <thead class="thead-dark">
                   <th style="width: 10%;">#</th>
                   <th style="width: 20%;">Client</th>
-                  <th style="width: 30%;">Project</th>
-                  <th style="width: 15%;">Progress</th>
-                  <th style="width: 15%;">Date Added</th>
-                  <th style="width: 10%; padding-left: 3%;">Tasks</th>
+                  <th style="width: 25%;">Project</th>
+                  <th style="width: 15%;">Tasks</th>
+                  <th style="width: 20%; padding-left: 6%;">Changes</th>
+                  <th style="width: 15%; padding-left: 1.5%;">Status</th>
                </thead>
                <tbody>
                   <tr>
-                     <td>1</td>
-                     <td>Panfilo Lacson</td>
-                     <td>
-                        <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td>3 out of 4</td>
-                     <td>02/25/2019</td>
-                     <td>
-                        <select class="form-control form-control-sm task">
-                           <option>View Task</option>
-                           <option disabled>Task 1</option>
-                           <option disabled>Task 2</option>
-                           <option disabled>Task 3</option>
-                           <option disabled>Task 4</option>
-                        </select>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>2</td>
-                     <td>Manny Villar</td>
-                     <td>
-                        <select class="form-control form-control-sm ">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td>1 out of 5</td>
-                     <td>10/21/2018</td>
-                     <td>
-                        <select class="form-control form-control-sm task">
-                           <option>View Task</option>
-                           <option disabled>Task 1</option>
-                           <option disabled>Task 2</option>
-                           <option disabled>Task 3</option>
-                           <option disabled>Task 4</option>
-                           <option disabled>Task 5</option>
-                        </select>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>3</td>
-                     <td>Juan Ponce Enrile</td>
-                     <td>
-                        <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td>2 out of 3</td>
-                     <td>05/19/2019</td>
-                     <td>
-                        <select class="form-control form-control-sm task">
-                           <option>View Task</option>
-                           <option disabled>Task 1</option>
-                           <option disabled>Task 2</option>
-                           <option disabled>Task 3</option>
-                        </select>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>4</td>
-                     <td>Gloria Macapagal Arroyo</td>
-                     <td>
-                        <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td>2 out of 6</td>
-                     <td>06/30/2019</td>
-                     <td>
-                        <select class="form-control form-control-sm task">
-                           <option>View Task</option>
-                           <option disabled>Task 1</option>
-                           <option disabled>Task 2</option>
-                           <option disabled>Task 3</option>
-                           <option disabled>Task 4</option>
-                           <option disabled>Task 5</option>
-                           <option disabled>Task 6</option>
-                        </select>
-                     </td>
-                  </tr>
+                      <td>1</td>
+                      <td>Chel Diokno</td>
+                      <td>Corrupt Politician Detector</td>
+                      <td>
+                            <select class="form-control form-control-sm" style="width: 90%;">
+                                <option>View Task</option>
+                                <option disabled>Task 1</option>
+                                <option disabled>Task 2</option>
+                                <option disabled>Task 3</option>
+                                <option disabled>Task 4</option>
+                            </select>
+                      </td>
+                      <td><button class="btn btn-sm btn-info" style="margin-left: 20%;" id="changes">View Changes</button></td>
+                      <td>Denied</td>
+                    </tr>
                </tbody>
             </table>
          </div>
+         <div class="row" style="margin-top: 5%;" id="edit">
+            <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td rowspan="6" style="text-align:center; width: 50%; vertical-align: middle; font-weight: bolder; font-size: 2rem;">Tasks</td>
+                    <td>Task 1 edited</td>
+                  </tr>
+                  <tr>
+                    <td>Task 2 edited</td>
+                  </tr>
+                  <tr>
+                    <td>Task 3 wala gi edit</td>
+                  </tr>
+                  <tr>
+                    <td>Task 4 wala gi edit</td>
+                  </tr>
+                  <tr>
+                    <td>Task 5 wala gi edit</td>
+                  </tr>
+                  <tr>
+                    <td>Task 6 wala gi edit</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="width: 100%; margin-top: 2%;">
+                <center>
+                    <button type="button" class="btn btn-danger" style="width: 12%;" id="deny">Deny</button>
+                    <button type="button" class="btn btn-info" style="width: 12%;" id="approve">Approve</button>
+                </center>
+              </div>
+         </div>
       </div>
    </body>
+   <script>
+        $(document).ready(function(){
+            $("#edit").hide();
+            $("#changes").click(function(){
+                $("#edit").show();
+            })     
+            $("#deny").click(function(){
+                $("#edit").hide();
+            });
+            $("#approve").click(function(){
+                $("#edit").hide();
+            });
+        });
+   </script>
 </html>

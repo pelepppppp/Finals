@@ -305,7 +305,7 @@
             <li><a href="sec_takenProjects.html">Taken Projects</a>
             <li><a href="sec_openProjects.html">Open Projects</a></li>
             <li><a href="sec_clients.html">Clients</a></li>
-            <li><a href="#">Approval</a></li>
+            <li><a href="sec_chat.html" style="color: #ec2652;">Chat</a></li>
             <li><a href="#">Logout</a></li>
          </ul>
       </nav>
@@ -317,8 +317,15 @@
          });
       </script>
       <div class="container" style="margin-top: 5%;">
-        <h3 class="font-weight-normal" style="margin-bottom: 5%;">Chat</h3>
-
+        <h3 class="font-weight-normal" style="margin-bottom: 3%;">Chat</h3>
+        <hr style="background: #000;">
+         <textarea disabled id="txtChat" style="width: 100%;" rows="20" class="form-control"></textarea>
+         <form id="messageForm" style="margin-top: 2%; width: 100%;">
+            <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Enter Message" style="display: inline-block; width: 89%; height: 50px;"></textarea>
+                <input type="submit" class="btn btn-primary" value="Send" style="float: right; width: 9%; height: 50px;">
+            </div>
+        </form>
 
       </div>
    </body>

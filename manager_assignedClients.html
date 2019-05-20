@@ -326,86 +326,88 @@
            $('#nav').toggleClass('show');
          });
       </script>
-      <div class="container" style="margin-top: 5%; width: 50%;">
+      <div class="container" style="margin-top: 5%; width: 100%;">
          <h3 style="margin-top: 5%; margin-bottom: 2%;" class="font-weight-normal">Assigned Clients</h3>
          <div class="row">
-            <table class="table table-borderless table-hover">
+            <table class="table table-borderless">
                <thead class="thead-dark">
-                  <th style="width: 10%;">#</th>
+                  <th style="width: 5%;">#</th>
                   <th style="width: 20%;">Client</th>
-                  <th style="width: 30%;">Project</th>
-                  <th style="width: 10%; padding-left: 6%;">Assign</th> 
+                  <th style="width: 20%;">Project</th>
+                  <th style="width: 15%;">Progress</th>
+                  <th style="width: 15%;">Date Assignesd</th>
+                  <th style="width: 15%;">Task</th>
+                  <th style="width: 10%; padding-left: 3%;">Assign</th> 
                </thead>
                <tbody>
                   <tr>
                      <td>1</td>
                      <td>Panfilo Lacson</td>
+                     <td>Project 1</td>
+                     <td>2 out of 4</td>
+                     <td>04/21/2019</td>
                      <td>
                         <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
+                           <option>Task 1</option>
+                           <option>Task 2</option>
+                           <option>Task 3</option>
+                           <option>Task 4</option>
                         </select>
                      </td>
-                     <td><button class="btn btn-sm btn-info" style="width: 60%; margin-left: 35%;">Assign</button></td>
+                     <td><button class="btn btn-sm btn-info" style="width: 80%; margin-left: 10%;">Assign</button></td>
                   </tr>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Project 2</td>
+                     <td>3 out of 4</td>
+                     <td>11/21/2019</td>
+                     <td>
+                        <select class="form-control form-control-sm">
+                           <option>Task 1</option>
+                           <option>Task 2</option>
+                           <option>Task 3</option>
+                           <option>Task 4</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Project 3</td>
+                     <td>3 out of 4</td>
+                     <td>05/05/2019</td>
+                     <td>
+                        <select class="form-control form-control-sm">
+                           <option>Task 1</option>
+                           <option>Task 2</option>
+                           <option>Task 3</option>
+                           <option>Task 4</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Project 4</td>
+                     <td>1 out of 4</td>
+                     <td>03/20/2019</td>
+                     <td>
+                        <select class="form-control form-control-sm">
+                           <option>Task 1</option>
+                           <option>Task 2</option>
+                           <option>Task 3</option>
+                           <option>Task 4</option>
+                        </select>
+                     </td>
+                  </tr>
+
                   <tr>
                      <td>2</td>
-                     <td>Manny Villar</td>
-                     <td>
-                        <select class="form-control form-control-sm ">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td><button class="btn btn-sm btn-info" style="width: 60%; margin-left: 35%;">Assign</button></td>
-                  </tr>
-                  <tr>
-                     <td>3</td>
-                     <td>Juan Ponce Enrile</td>
-                     <td>
-                        <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td><button class="btn btn-sm btn-info" style="width: 60%; margin-left: 35%;">Assign</button></td>
-                  </tr>
-                  <tr>
-                     <td>4</td>
-                     <td>Gloria Macapagal Arroyo</td>
-                     <td>
-                        <select class="form-control form-control-sm">
-                           <option>Project 1</option>
-                           <option>Project 2</option>
-                           <option>Project 3</option>
-                           <option>Project 4</option>
-                        </select>
-                     </td>
-                     <td><button class="btn btn-sm btn-info" style="width: 60%; margin-left: 35%;">Assign</button></td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-      </div>
-      <div class="container" style="margin-top: 5%; width: 50%;" id="teybol">
-         <!-- <h3 style="margin-top: 5%; margin-bottom: 2%;" class="font-weight-normal">Assigned Clients</h3> -->
-         <div class="row">
-            <table class="table table-borderless table-hover">
-               <thead class="thead-light">
-                  <th style="width: 20%;">Progress</th>
-                  <th style="width: 20%;">Date Assigned</th>
-                  <th style="width: 10%; padding-left: 7%;">Tasks</th> 
-               </thead>
-               <tbody>
-                  <tr>
+                     <td>Gloria Macapacal-Arroyo</td>
+                     <td>Project 1</td>
                      <td>2 out of 4</td>
-                     <td>02/25/2018</td>
+                     <td>06/11/2019</td>
                      <td>
                         <select class="form-control form-control-sm">
                            <option>Task 1</option>
@@ -414,22 +416,14 @@
                            <option>Task 4</option>
                         </select>
                      </td>
+                     <td><button class="btn btn-sm btn-info" style="width: 80%; margin-left: 10%;">Assign</button></td>
                   </tr>
                   <tr>
-                     <td>1 out of 4</td>
-                     <td>05/06/2019</td>
-                     <td>
-                        <select class="form-control form-control-sm ">
-                           <option>Task 1</option>
-                           <option>Task 2</option>
-                           <option>Task 3</option>
-                           <option>Task 4</option>
-                        </select>
-                     </td>
-                  </tr>
-                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Project 2</td>
                      <td>3 out of 4</td>
-                     <td>03/01/2019</td>
+                     <td>12/12/2018</td>
                      <td>
                         <select class="form-control form-control-sm">
                            <option>Task 1</option>
@@ -440,8 +434,11 @@
                      </td>
                   </tr>
                   <tr>
+                     <td></td>
+                     <td></td>
+                     <td>Project 3</td>
                      <td>1 out of 4</td>
-                     <td>04/15/2019</td>
+                     <td>10/15/2018</td>
                      <td>
                         <select class="form-control form-control-sm">
                            <option>Task 1</option>
